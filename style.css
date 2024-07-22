@@ -15,6 +15,7 @@ body{
     color: aliceblue;
 }
 .heading{
+    text-align: center;
     border: 2px solid rgb(23, 23, 23);
     padding:0 5px;
     background-color: rgb(82, 95, 95);
