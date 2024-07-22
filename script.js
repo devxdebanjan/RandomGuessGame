@@ -17,9 +17,11 @@ function initializeGame() {
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    const num = parseInt(document.querySelector("#input").value) ;
-    
+    let num = (document.querySelector("#input").value) ;
+    if(isNaN(num)){num=0}
+    num=parseInt(num);
     if (num==guess){
+        loworhi.innerText="DEMNNN!!! ACCURATE CORRECT GUESS"
         rem.innerText = "YAYYYY you made it";
         form.querySelector("button").disabled = true;
         previous.innerText = "HUGE W"
