@@ -9,7 +9,7 @@ function initializeGame() {
     loworhi.innerText = "CHOOSE A NUMBER BETWEEN 1 AND 100 WITHIN 10 GUESSES"
     prev = [];
     attempts = 10;
-    previous.innerText = `PREVIOUS GUESSES:`;
+    previous.innerText = `+++NEW GAME+++`;
     rem.innerText = `CHANCES REMAINING: ${attempts}`;
     form.querySelector("button").disabled = false;
     form.querySelector("#input").value = "";

@@ -1,5 +1,7 @@
 body{
     background-color: rgb(44, 44, 42);
+    display: flex;
+    justify-content: center;
 }
 .layout{
     display: flex;
@@ -8,7 +10,8 @@ body{
     align-items: center;
     flex-wrap: wrap;
     height: 500px;
-    border: 2px solid;
+    width:570px;
+    border: 2px solid aliceblue;
     color: aliceblue;
 }
 .heading{
