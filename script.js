@@ -18,8 +18,11 @@ function initializeGame() {
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     let num = (document.querySelector("#input").value) ;
-    if(isNaN(num)){num=0}
+    
     num=parseInt(num);
+    if(!((num>0)&&(num<101))){num="X";
+        alert("enter a valid input");
+    }
     if (num==guess){
         loworhi.innerText="DEMNNN!!! ACCURATE CORRECT GUESS"
         rem.innerText = "YAYYYY you made it";
