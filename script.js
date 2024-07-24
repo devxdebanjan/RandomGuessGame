@@ -6,9 +6,9 @@ const loworhi = document.querySelector(".inst")
 function initializeGame() {
     guess = (Math.floor(Math.random() * 100)) + 1;
     // heading.innerText = guess;
-    loworhi.innerText = "CHOOSE A NUMBER BETWEEN 1 AND 100 WITHIN 7 GUESSES"
+    loworhi.innerText = "CHOOSE A NUMBER BETWEEN 1 AND 100 WITHIN 5 GUESSES"
     prev = [];
-    attempts = 7;
+    attempts = 5;
     previous.innerText = `+++NEW GAME+++`;
     rem.innerText = `CHANCES REMAINING: ${attempts}`;
     form.querySelector("button").disabled = false;
